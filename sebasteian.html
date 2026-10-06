@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal HTML Page</title>
+    <style>
+        /* Simple, clean styling – not required but keeps things readable */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f9f9fc;
+            color: #1a1a2e;
+            line-height: 1.5;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        main {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            padding: 2rem 2rem 2.5rem;
+            border-radius: 1.25rem;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eaeef2;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #0b2b4f;
+            margin-bottom: 0.75rem;
+            border-left: 5px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #2d3e50;
+        }
+        .highlight {
+            background: #eef6ff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            color: #1e4c8c;
+        }
+        button {
+            background: #1e3a5f;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.75rem 2rem;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 8px rgba(0, 20, 60, 0.1);
+            letter-spacing: 0.01em;
+        }
+        button:hover {
+            background: #0f2b46;
+        }
+        button:active {
+            transform: scale(0.97);
+        }
+        footer {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #6b7a8d;
+            text-align: center;
+            border-top: 1px solid #dce2e9;
+            padding-top: 1.25rem;
+            width: 100%;
+        }
+        code {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            background: #f1f4f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 6px;
+            font-size: 0.9em;
+            color: #1a2b3c;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hello, world!</h1>
+        <p>
+            This is a <span class="highlight">normal HTML document</span> — 
+            it includes standard structure, semantic elements, and a touch of CSS. 
+            You can copy, edit, and use it as a starting point.
+        </p>
+        <p>
+            It works without any frameworks or external libraries. 
+            Everything you see is plain <code>HTML</code> + <code>CSS</code>.
+        </p>
+        <button onclick="alert('You clicked the button! 🎉')">
+            Click me
+        </button>
+        <footer>
+            © 2025 · A simple, normal HTML page
+        </footer>
+    </main>
+</body>
+</html>
